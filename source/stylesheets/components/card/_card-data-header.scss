@@ -1,0 +1,60 @@
+$card-data-header-background-color: #FFFFFF;
+
+// Card Header UI Control Text Styles
+.card-header-ui-controls {
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.card-data-header {
+  background-color: $card-data-header-background-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 56px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.card-data-header-text-group {
+  display: flex;
+  flex-direction: row;
+  padding-left: $gutter;
+
+}
+
+.card-data-header-text {
+  color: $black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card-data-header-filter {
+  opacity: 0.3;
+  padding-left: $gutter;
+  padding-top: 4px;
+
+}
+
+.card-data-header-tab-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-header-tab-fixed {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 182px;
+}
+
+.card-header-tab-fixed-active {
+  background-color: $card-data-header-background-color;
+  color: $brand-primary-color;
+}
+
+.card-header-tab-fixed-inactive {
+  background-color: $light-gray;
+  opacity: 0.4;
+}

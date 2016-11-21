@@ -1,0 +1,41 @@
+<div class="nav-bar">
+  <% link_to '/index.html' do %>
+    <div class="nav-logo">
+      <%= image_tag "images/brand/logo.svg" %>
+    </div>
+  <% end %>
+  <div id="menu">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+  <div class="nav-items">
+    <ul>
+      <li class="nav_active nav-dropdown">Cats and Dogs ▾
+        <ul class="nav-second-level">
+          <a href="#"><li>Gilda</li></a>
+          <a href="#"><li>Molli</li></a>
+          <a href="#"><li>Albert</li></a>
+          <a href="#"><li>Monty</li></a>
+          <a href="#"><li>Gigglio</li></a>
+        </ul>
+      </li>
+      <li class="nav_active nav-dropdown">Tools ▾
+        <ul class="nav-second-level">
+          <a href="#"><li>Bourbon</li></a>
+          <a href="#"><li>Neat</li></a>
+          <a href="#"><li>Middleman</li></a>
+        </ul>
+      </li>
+      <a href="#">
+        <li class="nav_active">About</li>
+      </a>
+      <a href="#">
+        <li class="nav_active">Team</li>
+      </a>
+      <a href="#">
+        <li class="nav_active">Contact</li>
+      </a>
+    </ul>
+  </div>
+</div>

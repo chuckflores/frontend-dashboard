@@ -1,0 +1,47 @@
+//****** Grid Classes ******
+@mixin col-x-list {
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      @include span-columns($i);
+      @include media($mobile) {
+        @include span-columns(4);
+      }
+    }
+  }
+}
+
+@mixin shift-x-list {
+  @for $n-columns from 0 through 12 {
+    .shift-#{$n-columns} {
+      @include shift($n-columns);
+    }
+  }
+}
+
+@include col-x-list;
+
+@include shift-x-list;
+
+.container {
+  @include outer-container();
+}
+
+.shift-1,
+.shift-2,
+.shift-3,
+.shift-4,
+.shift-5,
+.shift-6,
+.shift-7,
+.shift-8,
+.shift-9,
+.shift-10,
+.shift-11 {
+  @include media($mobile) {
+    @include shift(0);
+  };
+}
+
+.omega {
+  @include omega();
+}

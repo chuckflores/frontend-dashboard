@@ -1,0 +1,12 @@
+.page-wrap {
+  background-color: #E6ECF0;
+  display: block;
+  height: 100vh;
+  margin-left: $sidebar-width;
+  position: relative;
+  width: calc(100% - $sidebar-width);
+}
+
+.dashboard-padding {
+  padding: $gutter;
+}

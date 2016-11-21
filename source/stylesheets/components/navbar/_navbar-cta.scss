@@ -1,0 +1,27 @@
+.nav-button {
+  // Extra spacing between button and nav links
+  // margin: 0 $gutter;
+
+  // Equal spacing between all nav items
+  margin-right: $gutter;
+  margin-left: 0;
+}
+
+@include media($mobile) {
+  .nav-button {
+    // display: none;
+    visibility: hidden;
+
+
+    &.nav-cta-mobile {
+      // display: inline-block;
+      visibility: visible;
+      // position: fixed;
+      top: 0;
+    }
+
+    // &.show {
+    //   display: block;
+    // }
+  }
+}

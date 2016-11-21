@@ -1,0 +1,35 @@
+.nav-dropdown {
+  color: $navbar-primary-link-color;
+  position: relative;
+  transition: all $base-timing $nav-duration;
+
+  .nav-second-level {
+    background-color: $navbar-color;
+    display: none;
+    left: 0;
+    margin-top: $navbar-height;
+    position: absolute;
+    top: 0;
+    z-index: 10000;
+    transition: all $base-timing $nav-duration;
+  }
+
+  &:hover .nav-second-level {
+    display: block;
+  }
+}
+
+@include media($mobile) {
+  .nav-dropdown .nav-second-level {
+    background-color: $navbar-color;
+    right: 0;
+    left: auto;
+    margin-top: 1em;
+
+    &:hover, &:focus {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+}
