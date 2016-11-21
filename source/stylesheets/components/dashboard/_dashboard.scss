@@ -3,6 +3,7 @@
   display: block;
   height: 100vh;
   margin-left: $sidebar-width;
+  margin-top: $navbar-height;
   position: relative;
   width: calc(100% - $sidebar-width);
 }

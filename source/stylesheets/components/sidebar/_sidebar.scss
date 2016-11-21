@@ -7,6 +7,8 @@ $sidebar-primary-font-size: 14px;
 
 
 .sidebar-left {
+  top: 0;
+  left: 0;
   position: fixed;
   width: $sidebar-width;
 }

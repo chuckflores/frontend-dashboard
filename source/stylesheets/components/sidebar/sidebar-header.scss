@@ -1,0 +1,11 @@
+.sidebar-headerbar {
+  background-color: $white;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: $navbar-height;
+  margin-left: $sidebar-width;
+  z-index: 1000;
+
+}
