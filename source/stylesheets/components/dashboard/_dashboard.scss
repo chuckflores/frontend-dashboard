@@ -1,5 +1,8 @@
+body {
+  background-color: $dashboard-background-color;
+}
+
 .page-wrap {
-  background-color: #E6ECF0;
   display: block;
   height: 100vh;
   margin-left: $sidebar-width;

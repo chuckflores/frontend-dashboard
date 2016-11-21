@@ -1,6 +1,8 @@
 $card-data-background-color: #FFFFFF;
 
-
+.card-data {
+  margin-bottom: $gutter;
+}
 
 .card-data-content {
   background-color: $card-data-background-color;
